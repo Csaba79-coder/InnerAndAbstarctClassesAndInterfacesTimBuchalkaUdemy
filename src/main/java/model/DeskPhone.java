@@ -32,14 +32,15 @@ public class DeskPhone implements ITelephone {
 
     @Override
     public boolean callPhone(int phoneNumber) {
-        /*if (phoneNumber == myNumber) {
+        if (phoneNumber == myNumber) {
+            System.out.println("Ring ring");
             isRinging = true;
         } else {
             isRinging = false;
         }
-        return isRinging;*/
-        isRinging = phoneNumber == myNumber;
         return isRinging;
+        /*isRinging = phoneNumber == myNumber;
+        return isRinging;*/
     }
 
     @Override

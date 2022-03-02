@@ -1,5 +1,6 @@
 import model.DeskPhone;
 import model.ITelephone;
+import model.MobilePhone;
 
 public class Main {
 
@@ -8,6 +9,18 @@ public class Main {
         timsPhone = new DeskPhone(123456);
         timsPhone.powerOn();
         timsPhone.callPhone(123456);
+        timsPhone.isRinging();
+        timsPhone.answer();
+
+        timsPhone = new MobilePhone(987654);
+        // timsPhone.powerOn();
+        timsPhone.callPhone(987654);
+        timsPhone.isRinging();
+        timsPhone.answer();
+
+        timsPhone = new MobilePhone(324567);
+        timsPhone.powerOn();
+        timsPhone.callPhone(324567);
         timsPhone.isRinging();
         timsPhone.answer();
     }
